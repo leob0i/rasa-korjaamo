@@ -17,7 +17,7 @@ export default function ProjectenPage() {
       title: "Bridgestone Turanza 6",
       subtitle: "Premium-kesärengas henkilöautoihin",
       
-      // price: "alk. 101,09 € / kpl",
+       price: "alk. 101,09 € / kpl",
       image: "/images/bridgestone.png",
       description:
         "Turanza 6 sopii kuljettajalle, joka haluaa rauhallisen ja laadukkaan ajotuntuman ilman turhaa meteliä. Se on vahva valinta etenkin arkiajoon ja pidemmille maantieosuuksille.",
@@ -26,7 +26,7 @@ export default function ProjectenPage() {
       title: "Kumho Ecsta HS52",
       subtitle: "Tasapainoinen kesärengas hyvällä märkäpidolla",
      
-      // price: "alk. 61,53 € / kpl",
+       price: "alk. 61,53 € / kpl",
       image: "/images/kuhmo.png",
       description:
         "Ecsta HS52 on järkevä vaihtoehto, kun haetaan hyvää ajettavuutta ja varmaa tuntumaa märällä kohtuullisemmalla hintatasolla. Toimiva valinta monelle tavalliseen käyttöautoon.",
@@ -35,7 +35,7 @@ export default function ProjectenPage() {
       title: "Toyo Proxes Comfort",
       subtitle: "Mukavuuspainotteinen kesärengas jokapäiväiseen ajoon",
       
-      // price: "alk. 79,23 € / kpl",
+       price: "alk. 79,23 € / kpl",
       image: "/images/toyo.png",
       description:
         "Proxes Comfort painottaa nimensä mukaisesti vakaata ja hiljaista etenemistä. Se sopii hyvin kuljettajalle, joka arvostaa pehmeämpää yleisfiilistä ja siistiä ajettavuutta.",
@@ -45,13 +45,13 @@ export default function ProjectenPage() {
   const tireServices = [
     {
       title: "Vannetyöt",
-      // price: "alk. 79 € / 4 kpl",
+       price: "alk. 79 € / 4 kpl",
       description:
         "Renkaat vanteille tai vanteilta pois sisältäen tasapainotuksen. Sopii silloin, kun vaihdetaan itse rengas vanteelle eikä tehdä pelkkää kausivaihtoa.",
     },
     {
       title: "Renkaiden tasapainotus",
-      // price: "alk. 39 € / 4 kpl",
+       price: "alk. 39 € / 4 kpl",
       description:
         "Tasapainotus auttaa pitämään ajon vakaana ja vähentää tärinää etenkin maantienopeuksissa. Hyvä lisäpalvelu myös silloin, kun huomaat ratissa epätasaisuutta.",
     },
@@ -111,15 +111,15 @@ export default function ProjectenPage() {
                     <h3 className="text-3xl md:text-4xl font-bold text-white mb-3">{tire.title}</h3>
                     <div className="flex flex-wrap items-center gap-3 mb-5 text-sm">
                      
-                      {/* <span className="px-3 py-1 bg-orange-600/15 text-orange-400 border border-orange-500/30 rounded-full">
+                       <span className="px-3 py-1 bg-orange-600/15 text-orange-400 border border-orange-500/30 rounded-full">
                         {tire.price}
-                      </span> */}
+                      </span> 
                     </div>
                     <p className="text-zinc-300 leading-relaxed mb-6">{tire.description}</p>
-                    {/* <p className="text-sm text-zinc-500 leading-relaxed mb-8">
+                     <p className="text-sm text-zinc-500 leading-relaxed mb-8">
                       Esimerkkihinta tässä kokoluokassa. Lopullinen hinta riippuu koosta, saatavuudesta ja
                       valitusta rengastyypistä.
-                    </p> */}
+                    </p> 
 
                     <div className="flex flex-wrap gap-4">
                       
@@ -166,17 +166,17 @@ export default function ProjectenPage() {
                     <h3 className="text-2xl font-semibold text-white mb-3">{service.title}</h3>
                     <p className="text-zinc-300 leading-relaxed max-w-3xl">{service.description}</p>
                   </div>
-                  {/* <div className="md:text-right">
+                  <div className="md:text-right">
                     <div className="text-xl font-semibold text-orange-500 whitespace-nowrap">{service.price}</div>
-                  </div> */}
+                  </div> 
                 </div>
               ))}
             </div>
 
-            {/* <p className="text-sm text-zinc-500 mt-6 leading-relaxed">
+             <p className="text-sm text-zinc-500 mt-6 leading-relaxed">
               Hinnat ovat alkaen-hintoja. Lopullinen hinta määräytyy työn sisällön, koon, vanteen ja
               mahdollisten lisätöiden mukaan.
-            </p> */}
+            </p> 
           </div>
         </div>
       </section>
