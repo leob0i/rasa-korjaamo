@@ -8,8 +8,8 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "BeautifulRims - Your Wheel Specialist",
-  description: "From repair and powder coating to CNC machining. We make your wheels look like new again.",
+  title: "Rasa Väänänen - Luotettava autokorjaamo",
+  description: "Huollot, korjaukset, vikadiagnostiikka ja rengastyöt saman katon alta ammattitaidolla.",
   generator: "v0.app",
 }
 
@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="fi">
       <body className={`font-sans antialiased`}>
         {children}
         <Analytics />

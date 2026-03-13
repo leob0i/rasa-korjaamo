@@ -1,7 +1,7 @@
-import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { Footer } from "@/components/footer"
 import { Navigation } from "@/components/navigation"
-import { MapPin, Mail, Clock, Phone } from "lucide-react"
+import { MapPin, Clock, Contact } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -12,19 +12,14 @@ export default function ContactPage() {
 
       <section className="relative pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image
-            src="/high-end-luxury-car-wheel-close-up-dark-automotive.jpg"
-            alt="Contact"
-            fill
-            className="object-cover opacity-20"
-          />
+          <Image src="/high-end-luxury-car-wheel-close-up-dark-automotive.jpg" alt="Yhteystiedot" fill className="object-cover opacity-20" />
           <div className="absolute inset-0 bg-gradient-to-b from-zinc-900 via-zinc-900/90 to-zinc-900" />
         </div>
 
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 text-balance">Get In Touch</h1>
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 text-balance">Ota yhteyttä</h1>
           <p className="text-xl text-zinc-300 max-w-3xl mx-auto text-balance leading-relaxed">
-            Do you have questions or would you like to make an appointment? We are here for you!
+            Kysy huollosta, varaa aika tai pyydä tarjous. Vastaamme nopeasti.
           </p>
         </div>
       </section>
@@ -38,13 +33,13 @@ export default function ContactPage() {
                   <div className="flex items-start gap-4">
                     <MapPin className="w-6 h-6 text-orange-600 flex-shrink-0 mt-1" />
                     <div>
-                      <h3 className="text-lg font-semibold text-white mb-2">Address</h3>
+                      <h3 className="text-lg font-semibold text-white mb-2">Osoite</h3>
                       <p className="text-zinc-300 leading-relaxed">
-                        Mockstreet 10
+                        Porrassalmenkatu 48
                         <br />
-                        1010MM Mocktown
+                        50100 Mikkeli
                         <br />
-                        Netherlands
+                        Suomi
                       </p>
                     </div>
                   </div>
@@ -54,15 +49,17 @@ export default function ContactPage() {
               <Card className="bg-zinc-800 border-zinc-700">
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
-                    <Mail className="w-6 h-6 text-orange-600 flex-shrink-0 mt-1" />
+                    <Contact className="w-6 h-6 text-orange-600 flex-shrink-0 mt-1" />
                     <div>
-                      <h3 className="text-lg font-semibold text-white mb-2">Email</h3>
-                      <a
-                        href="mailto:beautifulrims@outlook.com"
-                        className="text-zinc-300 hover:text-orange-600 transition-colors"
-                      >
-                        beautifulrims@outlook.com
-                      </a>
+                      <h3 className="text-lg font-semibold text-white mb-2">Yhteystiedot</h3>
+                      <div className="space-y-2">
+                        <a href="mailto:adrasavaananen@gmail.com" className="block text-zinc-300 hover:text-orange-600 transition-colors">
+                          adrasavaananen@gmail.com
+                        </a>
+                        <a href="tel:0447835032" className="block text-zinc-300 hover:text-orange-600 transition-colors">
+                          0447835032
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </CardContent>
@@ -73,34 +70,52 @@ export default function ContactPage() {
                   <div className="flex items-start gap-4">
                     <Clock className="w-6 h-6 text-orange-600 flex-shrink-0 mt-1" />
                     <div>
-                      <h3 className="text-lg font-semibold text-white mb-2">Opening Hours</h3>
+                      <h3 className="text-lg font-semibold text-white mb-2">Aukioloajat</h3>
                       <div className="text-zinc-300 space-y-1">
-                        <p>Monday - Friday: 08:00 - 17:00</p>
-                        <p>Saturday: By appointment</p>
-                        <p>Sunday: Closed</p>
+                        <p>Ma - Pe: 08.00 - 16.30</p>
+                        <p>La: Suljettu</p>
+                        <p>Su: Suljettu</p>
                       </div>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="bg-zinc-800 border-zinc-700">
-                <CardContent className="p-6">
-                  <div className="flex items-start gap-4">
-                    <Phone className="w-6 h-6 text-orange-600 flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="text-lg font-semibold text-white mb-2">Phone Contact</h3>
-                      <p className="text-zinc-300 leading-relaxed">
-                        Call or email us for questions or to make an appointment. We are happy to help you!
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+              <div className="mt-6 flex justify-center">
+                <Link
+                  href="https://wa.me/358447835032"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Avaa WhatsApp ja ota yhteyttä"
+                  className="group inline-flex h-12 items-center gap-3 rounded-full bg-[#25D366] px-5 shadow-lg shadow-black/30 ring-1 ring-white/10 transition hover:bg-[#1EBE5D] hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+                >
+                  <svg
+                    viewBox="0 0 32 32"
+                    className="h-7 w-7 shrink-0 text-white"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      fill="currentColor"
+                      transform="translate(1.5 -0)"
+                      d="M19.11 17.53c-.28-.14-1.65-.81-1.9-.9-.26-.1-.45-.14-.64.14-.18.28-.74.9-.9 1.08-.17.18-.33.2-.6.06-.28-.14-1.18-.43-2.25-1.39-.83-.74-1.39-1.66-1.56-1.94-.17-.28-.02-.43.13-.57.13-.13.28-.33.42-.49.14-.17.18-.28.28-.46.1-.18.05-.35-.02-.49-.07-.14-.64-1.55-.87-2.12-.23-.56-.46-.49-.64-.49h-.55c-.2 0-.49.07-.74.35-.26.28-.97.95-.97 2.32 0 1.37 1 2.69 1.14 2.88.14.18 1.97 3 4.77 4.2.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.65-.67 1.88-1.32.23-.64.23-1.2.16-1.32-.07-.12-.26-.19-.54-.33z"
+                    />
+                    <path
+                      fill="currentColor"
+                      d="M16.01 3.2c-7.03 0-12.75 5.7-12.75 12.7 0 2.23.6 4.41 1.73 6.33L3.2 28.8l6.75-1.77a12.8 12.8 0 0 0 6.06 1.54c7.03 0 12.75-5.7 12.75-12.7S23.04 3.2 16.01 3.2zm0 23.12c-1.93 0-3.82-.52-5.47-1.5l-.39-.23-4.01 1.05 1.07-3.9-.25-.4a10.51 10.51 0 0 1-1.61-5.57c0-5.8 4.75-10.52 10.66-10.52 5.9 0 10.66 4.72 10.66 10.52 0 5.8-4.76 10.55-10.66 10.55z"
+                    />
+                  </svg>
 
-              <Button asChild size="lg" className="w-full bg-orange-600 hover:bg-orange-700 text-white">
-                <Link href="/offerte">Request Quote Directly</Link>
-              </Button>
+                  <span className="flex flex-col leading-[1.05]">
+                    <span className="font-sans text-[15px] font-semibold tracking-tight text-white">
+                      WhatsApp
+                    </span>
+                    <span className="font-sans text-[13px] font-semibold tracking-tight text-white/95 tabular-nums">
+                      +358 44 783 5032
+                    </span>
+                  </span>
+                </Link>
+              </div>
             </div>
 
             <div className="lg:sticky lg:top-24 h-fit">
@@ -108,14 +123,14 @@ export default function ContactPage() {
                 <CardContent className="p-0">
                   <div className="aspect-square lg:aspect-auto lg:h-[600px]">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2449.8!2d5.7!3d51.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c7a0e0e0e0e0e0%3A0x0!2sExpeditieweg%208F%2C%206673DV%20Andelst!5e0!3m2!1snl!2snl!4v1234567890"
+                      src="https://maps.google.com/maps?q=Porrassalmenkatu%2048,%2050100%20Mikkeli,%20Suomi&z=16&output=embed"
                       width="100%"
                       height="100%"
                       style={{ border: 0 }}
                       allowFullScreen
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
-                      title="BeautifulRims Location"
+                      title="Rasa Väänänen sijainti"
                     />
                   </div>
                 </CardContent>
@@ -125,104 +140,8 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-zinc-950">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <Card className="bg-zinc-800 border-zinc-700">
-              <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-white mb-4">Directions</h2>
-                <div className="text-zinc-300 leading-relaxed space-y-3">
-                  <p>
-                    BeautifulRims is easily accessible from the A15 and A50. Take the Andelst exit and follow the signs
-                    towards the industrial area.
-                  </p>
-                  <p>
-                    We are located at Expeditieweg 8F, a modern business location with ample parking for our customers.
-                  </p>
-                  <p className="font-semibold text-white">
-                    Tip: Make an appointment in advance, so we can reserve enough time for you and you can be helped
-                    immediately.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
 
-      <footer className="bg-zinc-950 border-t border-zinc-800 py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div>
-              <h3 className="text-2xl font-bold text-white mb-4">BeautifulRims</h3>
-              <p className="text-zinc-400 leading-relaxed">
-                Your reliable partner for all wheel services. With years of experience and craftsmanship, we ensure your
-                wheels look like new again.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="text-lg font-semibold text-white mb-4">Sitemap</h4>
-              <ul className="space-y-2">
-                <li>
-                  <Link href="/diensten" className="text-zinc-400 hover:text-orange-600 transition-colors">
-                    Services
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/projecten" className="text-zinc-400 hover:text-orange-600 transition-colors">
-                    Projects
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/over-ons" className="text-zinc-400 hover:text-orange-600 transition-colors">
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contact" className="text-zinc-400 hover:text-orange-600 transition-colors">
-                    Contact
-                  </Link>
-                </li>
-                <li>
-                  <a
-                    href="https://www.marktplaats.nl/u/beautifulrims/47376108/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-zinc-400 hover:text-orange-600 transition-colors"
-                  >
-                    Marketplace
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="text-lg font-semibold text-white mb-4">Contact Information</h4>
-              <div className="space-y-2 text-zinc-400">
-                <p>
-                  <span className="font-semibold text-white">Address:</span>
-                  <br />
-                  Mockstreet 10
-                  <br />
-                  1010MM Mocktown
-                </p>
-                <p>
-                  <span className="font-semibold text-white">Email:</span>
-                  <br />
-                  <a href="mailto:beautifulrims@outlook.com" className="hover:text-orange-600 transition-colors">
-                    beautifulrims@outlook.com
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="border-t border-zinc-800 mt-8 pt-8 text-center text-zinc-500">
-            <p>&copy; {new Date().getFullYear()} BeautifulRims. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

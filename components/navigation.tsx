@@ -31,42 +31,34 @@ export function Navigation() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="text-2xl font-bold text-white">
-            BeautifulRims
+           AD Rasa Väänänen
           </Link>
 
           <div className="hidden md:flex items-center gap-8">
-            <Link href="/diensten" className="text-zinc-300 hover:text-white transition-colors">
-              Services
+            <Link href="/palvelut" className="text-zinc-300 hover:text-white transition-colors">
+              Palvelut
             </Link>
-            <Link href="/projecten" className="text-zinc-300 hover:text-white transition-colors">
-              Projects
+            <Link href="/rengaspalvelut" className="text-zinc-300 hover:text-white transition-colors">
+              Rengaspalvelut
             </Link>
-            <Link href="/over-ons" className="text-zinc-300 hover:text-white transition-colors">
-              About Us
+            <Link href="/meista" className="text-zinc-300 hover:text-white transition-colors">
+              Meistä
             </Link>
             <Link href="/contact" className="text-zinc-300 hover:text-white transition-colors">
-              Contact
+              Yhteys
             </Link>
           </div>
 
           <div className="flex items-center gap-3">
-            <Button
-              asChild
-              variant="outline"
-              className="hidden sm:inline-flex border-zinc-600 text-white hover:bg-zinc-800 bg-transparent"
-            >
-              <a href="https://www.marktplaats.nl/u/beautifulrims/47376108/" target="_blank" rel="noopener noreferrer">
-                View Marketplace
-              </a>
-            </Button>
+            
             <Button asChild className="hidden sm:inline-flex bg-orange-600 hover:bg-orange-700 text-white">
-              <Link href="/offerte">Request Quote</Link>
+              <Link href="https://ad-finland.com/autokorjaamo/mikkeli/ad-autokorjaamo-rasa-vaananen_104/#huolto">Pyydä tarjous</Link>
             </Button>
 
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="md:hidden text-white p-2 hover:bg-zinc-800 rounded-lg transition-colors"
-              aria-label="Toggle menu"
+              aria-label="Avaa valikko"
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -85,32 +77,32 @@ export function Navigation() {
       >
         <div className="flex flex-col p-6 gap-6">
           <Link
-            href="/diensten"
+            href="/palvelut"
             className="text-zinc-300 hover:text-white transition-colors text-lg"
             onClick={closeMobileMenu}
           >
-            Services
+            Palvelut
           </Link>
           <Link
-            href="/projecten"
+            href="/rengaspalvelut"
             className="text-zinc-300 hover:text-white transition-colors text-lg"
             onClick={closeMobileMenu}
           >
-            Projects
+            Rengaspalvelut
           </Link>
           <Link
-            href="/over-ons"
+            href="/meista"
             className="text-zinc-300 hover:text-white transition-colors text-lg"
             onClick={closeMobileMenu}
           >
-            About Us
+            Meistä
           </Link>
           <Link
             href="/contact"
             className="text-zinc-300 hover:text-white transition-colors text-lg"
             onClick={closeMobileMenu}
           >
-            Contact
+            Yhteys
           </Link>
 
           <div className="border-t border-zinc-700 pt-6 flex flex-col gap-3">
@@ -120,12 +112,12 @@ export function Navigation() {
               className="w-full border-zinc-600 text-white hover:bg-zinc-800 bg-transparent"
             >
               <a href="https://www.marktplaats.nl/u/beautifulrims/47376108/" target="_blank" rel="noopener noreferrer">
-                View Marketplace
+                Varaosat
               </a>
             </Button>
             <Button asChild className="w-full bg-orange-600 hover:bg-orange-700 text-white">
-              <Link href="/offerte" onClick={closeMobileMenu}>
-                Request Quote
+              <Link href="https://ad-finland.com/autokorjaamo/mikkeli/ad-autokorjaamo-rasa-vaananen_104/#huolto" onClick={closeMobileMenu}>
+                Pyydä tarjous
               </Link>
             </Button>
           </div>
