@@ -213,7 +213,7 @@ export default function OverOnsPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-orange-600 hover:bg-orange-700 text-white text-lg px-8">
-              <Link href="https://ad-finland.com/autokorjaamo/mikkeli/ad-autokorjaamo-rasa-vaananen_104/#huolto">
+              <Link href="https://www.autokorjaamo.fi/embed-reservation/ad-autokorjaamo-rasa-vaananen-166?theme=ad">
                 Pyydä tarjous
               </Link>
             </Button>

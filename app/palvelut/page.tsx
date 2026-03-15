@@ -39,6 +39,7 @@ export default function DienstenPage() {
     {
       icon: Droplet,
       title: "Määräaikaishuollot",
+      price: "alk. 159 €",
       description:
         "Huollot myös uusiin takuunalaisiin autoihin. Takuu säilyy takuunalaisessa autossa samalla tavalla kuin merkkiliikkeessäkin huollettuna.",
       features: [
@@ -73,6 +74,7 @@ export default function DienstenPage() {
     {
       icon: Fuel,
       title: "Öljynvaihto",
+      price: "alk. 120 € sis. 4 l moottoriöljyä",
       description: "Auton moottorin öljynvaihto.",
       features: [
         "Moottoriöljyn vaihto",
@@ -174,6 +176,7 @@ export default function DienstenPage() {
     {
       icon: CarFront,
       title: "Ohjauskulmien mittaus ja nelipyöräsuuntaus",
+      price: "alk. 89 € / h sis. 1 h työtä",
       description:
         "Ohjauskulmien oikeat arvot vaikuttavat voimakkaasti auton ajettavuuteen ja renkaiden tasaiseen kulumiseen.",
       features: [
@@ -299,17 +302,25 @@ export default function DienstenPage() {
               <h3 className="text-2xl font-bold text-white mb-3">{service.title}</h3>
               <p className="text-zinc-400 leading-relaxed">{service.description}</p>
             </div>
-            <div className="md:col-span-2">
-              <h4 className="text-lg font-semibold text-white mb-4">Mitä palvelu sisältää:</h4>
-              <ul className="space-y-3">
-                {service.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-zinc-300">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <div className="md:col-span-2 flex flex-col h-full">
+  <div>
+    <h4 className="text-lg font-semibold text-white mb-4">Mitä palvelu sisältää:</h4>
+    <ul className="space-y-3">
+      {service.features.map((feature, idx) => (
+        <li key={idx} className="flex items-start gap-3">
+          <CheckCircle className="w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" />
+          <span className="text-zinc-300">{feature}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  {service.price && (
+    <div className="mt-6 md:mt-auto md:text-right">
+      <div className="text-xl font-semibold text-orange-500 whitespace-nowrap">{service.price}</div>
+    </div>
+  )}
+</div>
           </div>
         </CardContent>
       </Card>
@@ -368,7 +379,7 @@ export default function DienstenPage() {
             Pyydä tarjous, niin palaamme asiaan mahdollisimman pian.
           </p>
           <Button asChild size="lg" className="bg-orange-600 hover:bg-orange-700 text-white text-lg px-8">
-            <Link href="https://ad-finland.com/autokorjaamo/mikkeli/ad-autokorjaamo-rasa-vaananen_104/#huolto">Pyydä tarjous</Link>
+            <Link href="https://www.autokorjaamo.fi/embed-reservation/ad-autokorjaamo-rasa-vaananen-166?theme=ad">Pyydä tarjous</Link>
           </Button>
         </div>
       </section>
