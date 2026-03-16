@@ -6,6 +6,7 @@ import { Navigation } from "@/components/navigation"
 import { Wrench, Cog, Target, Droplet, Hammer, ShoppingCart, CheckCircle, Clock, Award } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { MonthlyPromo } from "@/components/monthly-promo"
 
 
 function TireIcon(props: SVGProps<SVGSVGElement>) {
@@ -173,8 +174,9 @@ export default function Home() {
         </div>
       </section>
 
+<MonthlyPromo />
 
-            <section className="py-12 sm:py-16 lg:py-20 bg-zinc-950 border-t border-zinc-800">
+            <section className="py-12 sm:py-16 lg:py-20 bg-zinc-950 ">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_0.9fr] gap-10 lg:gap-16 items-start max-w-6xl mx-auto">
             <div>

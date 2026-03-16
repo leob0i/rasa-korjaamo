@@ -73,8 +73,8 @@ export default function ContactPage() {
                       <h3 className="text-lg font-semibold text-white mb-2">Aukioloajat</h3>
                       <div className="text-zinc-300 space-y-1">
                         <p>Ma - Pe: 08.00 - 16.30</p>
-                        <p>La: Suljettu</p>
-                        <p>Su: Suljettu</p>
+                        <p>muulloin sopimuksen mukaan</p>
+                        
                       </div>
                     </div>
                   </div>

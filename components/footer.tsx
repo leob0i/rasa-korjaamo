@@ -30,8 +30,8 @@ export function Footer({
     : "text-zinc-400 hover:text-orange-600 transition-colors"
   const contactTextClassName = compact ? "space-y-2 text-sm sm:text-base text-zinc-400" : "space-y-2 text-zinc-400"
   const copyrightClassName = compact
-    ? "border-t border-zinc-800 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-xs sm:text-sm text-zinc-500"
-    : "border-t border-zinc-800 mt-8 pt-8 text-center text-zinc-500"
+    ? "border-t border-zinc-800 mt-6 sm:mt-8 pt-6 sm:pt-8 text-xs sm:text-sm text-zinc-500"
+    : "border-t border-zinc-800 mt-8 pt-8 text-zinc-500"
   const firstColumnClassName = compact ? "sm:col-span-2 lg:col-span-1" : undefined
 
   return (
@@ -66,12 +66,10 @@ export function Footer({
                   Yhteys
                 </Link>
               </li>
-             
             </ul>
           </div>
 
           <div>
-            <h4 className={headingClassName}>Yhteystiedot</h4>
             <div className={contactTextClassName}>
               <p>
                 <span className="font-semibold text-white">Osoite:</span>
@@ -87,12 +85,30 @@ export function Footer({
                   {email}
                 </a>
               </p>
+              <p>
+                <span className="font-semibold text-white">Y-tunnus:</span>
+                <br />
+                0755224-6
+              </p>
             </div>
           </div>
         </div>
 
         <div className={copyrightClassName}>
-          <p>&copy; {new Date().getFullYear()} Rasa Väänänen. Kaikki oikeudet pidätetään.</p>
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <p>&copy; {new Date().getFullYear()} Rasa Väänänen. Kaikki oikeudet pidätetään.</p>
+            <p className="text-xs text-zinc-500">
+              Toimivat ja modernit kotisivut teki:{" "}
+              <a
+                href="https://www.leodigital.fi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-orange-600 transition-colors"
+              >
+                leodigital.fi
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>

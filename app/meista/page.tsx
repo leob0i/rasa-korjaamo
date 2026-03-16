@@ -103,7 +103,7 @@ export default function OverOnsPage() {
                 <dl className="space-y-4 text-zinc-300">
                   <div>
                     <dt className="text-zinc-500 text-sm uppercase tracking-wide">Yritys</dt>
-                    <dd className="text-base">Autokorjaamo Rasa &amp; Väänänen avoin yhtiö</dd>
+                    <dd className="text-base">Autokorjaamo Rasa &amp; Väänänen avoin yhtiö. Y-tunnus: 0755224-6</dd>
                   </div>
                   <div>
                     <dt className="text-zinc-500 text-sm uppercase tracking-wide">Perustettu</dt>

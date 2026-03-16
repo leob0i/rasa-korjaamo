@@ -98,13 +98,13 @@ export default function ProjectenPage() {
       <section className="relative pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/high-end-luxury-car-wheel-close-up-dark-automotive.jpg"
+            src="/images/oranssiauto.jpg"
             alt="Renkaat ja rengaspalvelut"
             fill
-            className="object-cover opacity-20"
+            className="object-cover opacity-60"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-zinc-900 via-zinc-900/90 to-zinc-900" />
+          <div className="absolute inset-0 bg-gradient-to-b from-zinc-900/45 via-zinc-900/30 to-zinc-900/55" />
         </div>
 
         <div className="relative z-10 container mx-auto px-4">
