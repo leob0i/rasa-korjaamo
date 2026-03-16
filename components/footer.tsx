@@ -9,7 +9,7 @@ type FooterProps = {
 
 const DEFAULT_DESCRIPTION = "Olemme monimerkkikorjaamo Mikkelissä, joka kuuluu valtakunnallisesti tunnettuun AD-ketjuun. Autoja yrityksemme on korjannut jo yli 30 vuotta. Huollamme ja korjaamme kaiken merkkisiä autoja."
 const DEFAULT_ADDRESS_LINES: [string, string] = ["Porrassalmenkatu 48", "50100 Mikkeli"]
-const DEFAULT_EMAIL = "info@rasakorjaamo.fi"
+const DEFAULT_EMAIL = "adrasavaananen@gmail.com"
 
 export function Footer({
   description = DEFAULT_DESCRIPTION,

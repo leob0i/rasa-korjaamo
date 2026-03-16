@@ -70,7 +70,7 @@ export default function Home() {
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0 z-0">
           <Image
-  src="/images/rasa.png"
+  src="/images/audi.jpg"
   alt="Autokorjaamon huoltotila"
   fill
   className="object-cover opacity-60"
@@ -334,7 +334,7 @@ export default function Home() {
       <section className="relative py-20 sm:py-24 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/luxury-sports-car-wheels-close-up-dramatic-lightin.jpg"
+            src="/images/korkki.jpg"
             alt="Korjaamon yhteydenottotausta"
             fill
             className="object-cover"
@@ -354,7 +354,7 @@ export default function Home() {
             size="lg"
             className="bg-orange-600 hover:bg-orange-700 text-white text-lg sm:text-xl px-8 sm:px-12 py-5 sm:py-6 shadow-2xl shadow-orange-600/40 hover:shadow-orange-600/60 transition-all hover:scale-105 w-full sm:w-auto mx-4"
           >
-            <Link href="https://ad-finland.com/autokorjaamo/mikkeli/ad-autokorjaamo-rasa-vaananen_104/#huolto">Aloita tarjouspyyntö</Link>
+            <Link href="https://www.autokorjaamo.fi/embed-reservation/ad-autokorjaamo-rasa-vaananen-166?theme=ad">Aloita tarjouspyyntö</Link>
           </Button>
         </div>
       </section>
