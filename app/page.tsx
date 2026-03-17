@@ -9,6 +9,7 @@ import Link from "next/link"
 import { MonthlyPromo } from "@/components/monthly-promo"
 
 
+
 function TireIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
@@ -171,6 +172,17 @@ export default function Home() {
               </Card>
             ))}
           </div>
+
+          <div className="mt-6 sm:mt-8 flex justify-center">
+            <Button
+              asChild
+              size="lg"
+              className="bg-orange-600 hover:bg-orange-700 text-white px-6 sm:px-8 shadow-lg shadow-orange-600/30 hover:shadow-orange-600/50 transition-all hover:scale-105"
+            >
+              <Link href="/palvelut">Lue lisää palveluistamme</Link>
+            </Button>
+          </div>
+
         </div>
       </section>
 
